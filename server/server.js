@@ -1,9 +1,9 @@
 var express = require('express');
 var app = express();
-var api = require('./api/api');
+var api = require('./api');
 
 // setup the app middlware
-require('./middleware/appMiddlware')(app);
+require('./middleware')(app);
 
 // setup the api
 app.use('/api/', api);
